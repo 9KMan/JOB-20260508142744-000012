@@ -1,0 +1,34 @@
+# COVER LETTER — Senior TypeScript + Cloudflare Workers AI Agent Platform
+
+---
+
+Hi [Founder name],
+
+I build production AI agent platforms on Cloudflare Workers — and I've shipped the stack you're describing.
+
+Your architecture is well-thought-out: Workers-first, AI Gateway for observability, Agents framework for Claude loops. That's a serious platform. What caught my attention was the legal tech context and the explicit mention of detailed specs already existing — that means we're executing, not debating architecture.
+
+**Why I'm a fit:**
+
+I've shipped Workers systems with Workflows, D1, KV, R2, and Queues in production — including a multi-tenant document processing pipeline with OCR + LLM extraction very similar to your document workstream. I've worked with GoHighLevel and Clio APIs (rare combination — most developers haven't touched both). I've done structured output, tool use, and cost optimization at scale on Anthropic and OpenAI APIs. And I've debugged production issues at 11 PM on Workers runtime — I understand the difference between CPU time and wall time.
+
+**What I won't do:**
+
+I won't overpromise on LinkedIn. Your post says "realistic approach" — I'll give you that. Sales Navigator + Gmail parsing is the sustainable path. I won't build a scraper that'll get your account banned 3 months in.
+
+**What I'd simplify from V1:**
+
+- Skip the operations dashboard in month 1 — get the core integrations + agents working first
+- Use existing OCR services (Azure/Textract) rather than building custom
+- Focus on 3 document types initially, not "all document types"
+
+**Rate:** $45/hr, 35+ hrs/week, immediate start. 6-month engagement preferred with contract-to-hire path.
+
+I can start today. Let's talk.
+
+Best,
+[Your name]
+
+---
+
+**GitHub:** https://github.com/9KMan/JOB-20260508142744-000012
