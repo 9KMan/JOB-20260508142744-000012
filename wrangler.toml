@@ -1,0 +1,46 @@
+name = "cf-ai-agent-platform"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+[[observability.pipeline]]
+version = 1
+kind = "logpush"
+destination = "observability"
+
+# D1 database bindings
+[[d1_databases]]
+binding = "DB"
+database_name = "ai-agent-platform"
+database_id = "example-d1-id"
+
+# KV namespaces
+[[kv_namespaces]]
+binding = "CACHE"
+id = "example-kv-id"
+
+# R2 buckets
+[[r2_buckets]]
+binding = "DOCUMENTS"
+bucket_name = "documents"
+
+# Queue producers/consumers
+[[queues]]
+binding = "DOCUMENT_QUEUE"
+queue = "document-processing"
+
+[[queues]]
+binding = "SIGNAL_QUEUE"
+queue = "signals"
+
+# Secrets (set via `wrangler secret put`)
+# ANTHROPIC_API_KEY
+# GOHIGHLEVEL_API_KEY
+# GOHIGHLEVEL_LOCATION_ID
+# CLIO_CLIENT_ID
+# CLIO_CLIENT_SECRET
+# AZURE_FORM_RECOGNIZER_ENDPOINT
+# AZURE_FORM_RECOGNIZER_KEY
