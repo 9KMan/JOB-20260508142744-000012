@@ -1,0 +1,18 @@
+name = "lexagent"
+main = "src/index.ts"
+compatibility_date = "2024-03-01"
+
+[site]
+bucket = "./frontend/dist"
+
+[[r2_buckets]]
+binding = "AI_BUCKET"
+name = "lexagent-assets"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lexagent"
+database_id = "local"
+
+[vars]
+ENV = "production"

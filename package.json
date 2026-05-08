@@ -1,0 +1,27 @@
+{
+  "name": "lexagent",
+  "version": "1.0.0",
+  "description": "AI Agent Platform for Law Firms",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "npm run build:worker && npm run build:frontend",
+    "build:worker": "tsc",
+    "build:frontend": "cd frontend && npm install && npm run build",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "hono": "^4.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240320.0",
+    "typescript": "^5.3.0",
+    "wrangler": "^3.0.0",
+    "vitest": "^1.0.0"
+  }
+}
