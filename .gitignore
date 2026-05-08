@@ -1,0 +1,26 @@
+# Node dependencies
+node_modules/
+
+# Cloudflare build output
+.dist/
+.wrangler/
+
+# Environment files (contain secrets)
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+*.log
+*.tmp
+
+# Editor directories
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PROPOSAL.md and COVER_LETTER.txt are stored in MinIO, not GitHub
+# See: https://github.com/9KMan/jobs/blob/main/PROPOSAL.md (MinIO adminfactory/jobs/)
